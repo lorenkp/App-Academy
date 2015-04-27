@@ -1,21 +1,29 @@
 class Tile
-  attr_accessor :board, :bombed, :flag, :revealed
+  attr_accessor :board, :bombed, :flag, :revealed, :public_display
 
-  def initialize(board = nil, position)
+  def initialize(position)
     @board = board
     @bombed = false
     @flag = false
     @revealed = false
     @position = position
+    @public_display = "*"
   end
 
   def reveal
     self.revealed = true
+    @public_display = (neighbor_bomb_count > 0 ? neighbor_bomb_count.to_s : "_")
   end
 
   def bombed?
     @bombed
   end
+
+  def flag
+    @flag = true
+    @public_display = "F"
+  end
+
 
   def neighbors
     neighbors = []
@@ -38,7 +46,7 @@ class Tile
 end
 
 class Board
-  attr_reader :grid_size, :bomb_num
+  attr_reader :grid_size, :bomb_num, :grid
 
   def initialize
     @grid_size = 9
@@ -53,6 +61,8 @@ class Board
 
   def make_grid
     @grid_size.times do |row|
+      p row
+      p @grid
       @grid_size.times do |col|
         @grid[row][col] = Tile.new([row, col])
       end
@@ -69,14 +79,18 @@ class Board
     end
 
     @grid.each do |row|
-      row.each do |col|
-        @grid[row][col].board = self
+      row.each do |tile|
+        tile.board = self
       end
     end
-
   end
 
+  def display
+    @grid.each do |row|
+      p row.map(&:public_display)
+    end
 
-
+    nil
+  end
 
 end
