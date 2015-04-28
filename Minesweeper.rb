@@ -1,3 +1,5 @@
+require 'yaml'
+
 class Tile
   attr_accessor :board, :bombed, :flag, :revealed, :public_display
 
@@ -150,6 +152,8 @@ class Game
   def get_input
     puts "Choose square to reveal or flag—e.g. r00."
     input = gets.chomp.split('')
+    save if input.join.downcase == "save"
+    load_game if input.join.downcase == "load"
     choice = input.shift.downcase
     position = input.map(&:to_i)
     until valid_input?(choice, position)
@@ -159,6 +163,10 @@ class Game
     end
 
     {choice: choice, position: position}
+  end
+
+  def load_game
+    YAML.load_file('saved_game.yml').play
   end
 
   def over?
@@ -180,6 +188,13 @@ class Game
       end
     end
     puts "You won!"
+  end
+
+  def save
+    puts "Game saved!"
+    File.open("saved_game.yml", "w") do |f|
+      f.puts self.to_yaml
+    end
   end
 
   def valid_input?(choice, position)
