@@ -2,7 +2,6 @@ class Tile
   attr_accessor :board, :bombed, :flag, :revealed, :public_display
 
   def initialize(position)
-    @board = board
     @bombed = false
     @flag = false
     @revealed = false
@@ -19,7 +18,6 @@ class Tile
         tile.reveal unless tile.flagged? || tile.revealed?
       end
     end
-
     nil
   end
 
@@ -28,7 +26,7 @@ class Tile
   end
 
   def flagged?
-    @flagged?
+    @flag
   end
 
   def revealed?
@@ -36,18 +34,29 @@ class Tile
   end
 
   def flag
-    @flag = !@flag
-    @public_display == "*" ? "F" : "*"
+    if flagged?
+      @public_display = "*"
+      @flag = false
+      @board.flag_count -= 1
+    else
+      @public_display = "F"
+      @flag = true
+      @board.flag_count += 1
+    end
   end
 
   def neighbors
-    neighbors = []
-    adjustments = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]]
-    adjustments.each do |dx, dy|
-      neighbors << [@position[0] + dx, @position[1] + dy]
-    end
+    if @neighbors
+      @neighbors
+    else
+      neighbors = []
+      adjustments = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]]
+      adjustments.each do |dx, dy|
+        neighbors << [@position[0] + dx, @position[1] + dy]
+      end
 
-    neighbors.select { |x, y| x.between?(0, 8) && y.between?(0, 8) }
+      @neighbors = neighbors.select { |x, y| x.between?(0, 8) && y.between?(0, 8) }
+    end
   end
 
   def neighbor_bomb_count
@@ -62,11 +71,13 @@ end
 
 class Board
   attr_reader :grid_size, :bomb_num, :grid
+  attr_accessor :flag_count
 
   def initialize
     @grid_size = 9
     @bomb_num = 10
     @grid = Array.new(@grid_size) { Array.new(@grid_size) }
+    @flag_count = 0
     make_grid
   end
 
@@ -82,6 +93,13 @@ class Board
       end
     end
 
+    place_bombs
+    update_tile_boards
+
+    nil
+  end
+
+  def place_bombs
     bombs_left = @bomb_num
     while bombs_left > 0
       row = (0..8).to_a.sample
@@ -91,22 +109,34 @@ class Board
         bombs_left -= 1
       end
     end
+  end
 
+  def update_tile_boards
     @grid.each do |row|
       row.each do |tile|
         tile.board = self
       end
     end
-
-    nil
   end
 
   def display
-    @grid.each do |row|
+    puts "Number of bombs: #{bomb_num}"
+    puts "Flagged cells: #{flag_count}"
+    print "   "
+    @grid.size.times do |col_counter|
+      print "  #{col_counter}  "
+    end
+    puts
+    @grid.each_with_index do |row, idx|
+      print "#{idx}  "
       p row.map(&:public_display)
     end
 
     nil
+  end
+
+  def won?
+    flag_count == bomb_num && grid.flatten.all? { |tile| tile.flagged? || tile.revealed? }
   end
 
 end
@@ -117,38 +147,39 @@ class Game
     @board = Board.new
   end
 
-  def play
-    over = false
-    until over
-      @board.display
-      input = get_input
-      tile = @board.get_tile(input[:position])
-      if choice == "f"
-        tile.flag
-      else
-        if tile.bombed?
-          p "YOU LOSE, SUCKA"
-          return
-        else
-          tile.reveal
-        end
-      end
-      
-    end
-  end
-
   def get_input
-    puts "Choose square to reveal, i.e. f/r, row, column"
-    input = gets.chomp.split(", ")
-    choice = input.shift.downcase!
+    puts "Choose square to reveal or flag—e.g. r00."
+    input = gets.chomp.split('')
+    choice = input.shift.downcase
     position = input.map(&:to_i)
     until valid_input?(choice, position)
-      input = gets.chomp.split(", ")
-      choice = input.shift.downcase!
+      input = gets.chomp.split('')
+      choice = input.shift.downcase
       position = input.map(&:to_i)
     end
 
     {choice: choice, position: position}
+  end
+
+  def over?
+    @board.won?
+  end
+
+  def play
+    until over?
+      @board.display
+      input = get_input
+      tile = @board.get_tile(input[:position])
+      if input[:choice] == "f"
+        tile.flag
+      elsif tile.bombed?
+        p "YOU LOSE, SUCKA"
+        return
+      else
+        tile.reveal
+      end
+    end
+    puts "You won!"
   end
 
   def valid_input?(choice, position)
