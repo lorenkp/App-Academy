@@ -1,6 +1,6 @@
-require_relative 'pieces.rb'
+require_relative 'pieces'
 
-class SteppingPieces
+class SteppingPieces < Pieces
   attr_reader :pos, :color
 
   def initialize(color, pos, board)
@@ -16,17 +16,23 @@ class Knight < SteppingPieces
     (x - 2..x + 2).each { |x| (y - 2..y + 2)
       .each { |y| potential_pos << [x, y] } }
       select_valids(potential_pos, x, y)
-    end
+  end
 
-    def select_valids(potentials, x, y)
-      potentials.select do |xy|
-        xy[0].between?(0, 7) && xy[1].between?(0, 7) && # is it overflowing the board?
-        (x - xy[0]).abs < 3 && (y - xy[1]).abs < 3 && # can't move 3 in a straight line
-        (x - xy[0]).abs + (y - xy[1]).abs == 3 && # but must move 3 steps
-        @board.occupied?(@pos).color != color
-      end
+  def select_valids(potentials, x, y)
+    potentials.select do |xy|
+      xy[0].between?(0, 7) && xy[1].between?(0, 7) && # is it overflowing the board?
+      (x - xy[0]).abs < 3 && (y - xy[1]).abs < 3 && # can't move 3 in a straight line
+      (x - xy[0]).abs + (y - xy[1]).abs == 3 && # but must move 3 steps
+      @board.occupied?(@pos).color != color
     end
+  end
 
+  def symbol
+    if (@color == :black)
+      '♞'
+    else
+      '♘'
+    end
   end
 end
 
@@ -47,5 +53,13 @@ class King < SteppingPieces
         @board.occupied?(@pos).color != color
       end
     end
-    
+
+    def symbol
+      if (@color == :black)
+        '♚'
+      else
+        '♔'
+      end
+    end
+
   end
