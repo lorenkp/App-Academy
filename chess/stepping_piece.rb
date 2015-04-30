@@ -1,14 +1,15 @@
-require_relative 'pieces'
+require_relative 'piece'
 
-class SteppingPieces < Pieces
-  attr_reader :pos, :color
+class SteppingPiece < Piece
+  attr_reader :pos, :color, :board
 
   def initialize(color, pos, board)
+    @board = board
     super
   end
 end
 
-class Knight < SteppingPieces
+class Knight < SteppingPiece
 
   def moves
     x, y = pos
@@ -22,8 +23,9 @@ class Knight < SteppingPieces
     potentials.select do |xy|
       xy[0].between?(0, 7) && xy[1].between?(0, 7) && # is it overflowing the board?
       (x - xy[0]).abs < 3 && (y - xy[1]).abs < 3 && # can't move 3 in a straight line
-      (x - xy[0]).abs + (y - xy[1]).abs == 3 && # but must move 3 steps
-      @board.occupied?(@pos).color != color
+      (x - xy[0]).abs + (y - xy[1]).abs == 3 # && # but must move 3 steps
+      #!@board.occupied?(xy) #&& (@board[xy[0], xy[1]].color != self.color)
+
     end
   end
 
@@ -36,7 +38,7 @@ class Knight < SteppingPieces
   end
 end
 
-class King < SteppingPieces
+class King < SteppingPiece
   def moves
     x, y = pos
     potential_pos = []
@@ -46,11 +48,11 @@ class King < SteppingPieces
     end
 
     def select_valids(potential_pos, x, y)
-      potentials.select do |xy|
+      potential_pos.select do |xy|
         xy[0].between?(0, 7) && xy[1].between?(0, 7) && # is it overflowing the board?
         (x - xy[0]).abs < 2 && (y - xy[1]).abs < 2 && # can't move 3 in a straight line
         (x - xy[0]).abs + (y - xy[1]).abs == 1 && # but must move 3 steps
-        @board.occupied?(@pos).color != color
+        @board.occupied?(@pos)
       end
     end
 
