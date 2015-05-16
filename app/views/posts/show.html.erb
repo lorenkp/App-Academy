@@ -1,2 +1,24 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<%= render "shared/errors"  %>
+
+<h1><%= @post.title %></h1>
+
+
+
+<p><%= @post.url %></p>
+<p><%= @post.content %></p>
+<p><%= @post.author.username %></p>
+<ul><% @post.subs.each do |sub| %>
+  <li><%= sub.title %></li>
+  <% end %>
+</ul>
+<br>
+<%= link_to "Edit Post", edit_post_url(@post) %>
+<%= link_to "Comment", new_comment_url(post_id: @post.id) %>
+<br>
+<h3>Comments</h3>
+<ul>
+  <% @post.top_level_comments.each do |par_comment| %>
+    <li><%= par_comment.content %></li>
+    <li><small><%= par_comment.author.username %></small></li>
+  <% end %>
+</ul>
