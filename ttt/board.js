@@ -29,16 +29,11 @@ function isWinningArray (arr) {
 function isVerticalWin (grid) {
   var result = [[], [], []];
   for (var i = 0; i < grid.length; i++) {
-    for (var j = 0; j < grid.length; j++) {
-      if (grid[j][i] === undefined) {
-        result[i][j] = "v";
-      } else {
-      result[i][j] = grid[j][i];
-      }
+    if (grid[0][i] === grid[1][i] && grid[1][i] === grid[2][i]) {
+      return true;
     }
-
-  return isHorizontalWin(result);
   }
+  return false;
 }
 
 function isDiagonalWin (grid) {
