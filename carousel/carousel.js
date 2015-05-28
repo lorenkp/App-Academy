@@ -9,6 +9,10 @@ $.Carousel = function(el) {
 };
 
 $.Carousel.prototype.slide = function(dir) {
+  if (this.transitioning){
+    return;
+  }
+  this.transitioning = true;
   var act = $('.items img').eq(this.activeIdx);
   var tempIdx = (this.activeIdx + dir);
   if (tempIdx < 0) {
@@ -28,9 +32,10 @@ $.Carousel.prototype.slide = function(dir) {
     newImg.addClass("left");
     act.addClass("right");
   }
-
+  var that = this;
   act.one('transitionend', function(event) {
     act.removeClass('active left right');
+    that.transitioning= false;
     console.log(event.currentTarget);
     // act.removeClass('left right');
   });
