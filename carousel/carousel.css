@@ -2,15 +2,29 @@
   height: 500px;
   width: 500px;
 }
-.items {
+div.items {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 .items img {
   display: none;
+  transition: left 500ms linear;
+  overflow: hidden;
 }
-.items .active {
-  display: block
+.items img.active {
+  display: block;
+  position: absolute;
+  left: 0%;
 }
-.slide-left {}
-.slide-right {}
+.items img.right {
+  position: absolute;
+  display: block;
+  left: 100%;
+}
+.items img.left {
+  display: block;
+  position: absolute;
+  left: -100%;
+}
