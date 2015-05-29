@@ -18,6 +18,7 @@ $.FollowToggle.prototype.render = function() {
   }
 };
 
+
 $.FollowToggle.prototype.handleClick = function() {
   var that = this;
   this.$el.on("click", function(event) {
