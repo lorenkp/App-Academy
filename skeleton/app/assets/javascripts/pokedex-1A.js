@@ -1,5 +1,5 @@
 Pokedex.RootView.prototype.addPokemonToList = function (pokemon) {
-  $('<li>').text(pokemon.get('name') + ' ' + pokemon.get('poke_type'))
+  $('<li>').text(pokemon.get('name') + ' ' + pokemon.escape('poke_type'))
     .addClass('poke-list-item')
     .data('id', pokemon.get('id')).appendTo(this.$pokeList);
 };
@@ -12,5 +12,5 @@ Pokedex.RootView.prototype.refreshPokemon = function () {
         that.addPokemonToList(el);
       });
     }
-  })
+  });
 };
