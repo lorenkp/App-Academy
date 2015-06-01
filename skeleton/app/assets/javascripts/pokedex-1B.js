@@ -1,6 +1,12 @@
 Pokedex.RootView.prototype.renderPokemonDetail = function (pokemon) {
   var $img = $('<img>').attr('src', pokemon.get('image_url'));
   var $div = $('<div>').addClass('detail').append($img);
+  _.each(pokemon.attributes, function(item, index){
+    if (index !== 'image_url' && index !== 'id' && index !== 'pokemon') {
+      $('<li>').text(index + ': ' + item).appendTo($div);
+    }
+  });
+  // debugger
   this.$pokeDetail.append($div);
 //   $('<div>').addClass('detail').append('<img>')
 //     .attr('src', pokemon.get("image_url")).appendTo(this.$pokeDetail);
