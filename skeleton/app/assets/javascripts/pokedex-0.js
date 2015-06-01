@@ -44,6 +44,8 @@ window.Pokedex.RootView = function ($el) {
   this.$toyDetail = this.$el.find('.toy-detail');
 
   // Click handlers go here.
+  $('ul.pokemon-list').on('click', 'li.poke-list-item',
+                          this.selectPokemonFromList.bind(this));
 };
 
 $(function() {
