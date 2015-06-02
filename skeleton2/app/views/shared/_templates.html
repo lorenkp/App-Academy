@@ -1,0 +1,29 @@
+<script type="text/template" id="pokemon-list-item-template">
+  <li class="poke-list-item" data= ></li>
+</script>
+
+<script type="text/template" id="pokemon-detail-template">
+
+  <div class="detail">
+    <img src="<%%= pokemon.escape('image_url')  %>"/>
+    <ul>
+      <li><%%= pokemon.escape("attack") %></li>
+      <li><%%= pokemon.escape("defense") %></li>
+      <li><%%= pokemon.escape("name") %></li>
+      <li><%% for(var move in pokemon.attributes.moves) { %>
+        <%%= pokemon.attributes.moves[move] %>
+      <%% } %></li>
+      <li><%%= pokemon.escape("poke_type") %></li>
+
+    </ul>
+  </div>
+</script>
+
+<script type="text/template" id="toy-list-item-template">
+</script>
+
+<script type="text/template" id="toy-detail-template">
+</script>
+
+<script type="text/template" id="pokemon-form-template">
+</script>
