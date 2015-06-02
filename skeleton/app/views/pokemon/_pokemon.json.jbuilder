@@ -2,10 +2,8 @@ json.extract! pokemon, :id, :attack, :defense, :image_url, :moves, :name, :poke_
 
 display_toys ||= false
 if display_toys
-  json.toys do
-    json.array! pokemon.toys do |toy|
-      json.partial! 'toys/toy', toy: toy
-    end
+  json.toys(pokemon.toys) do |toy|
+    json.partial! 'toys/toy', toy: toy
   end
 end
 

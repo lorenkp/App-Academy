@@ -3,39 +3,59 @@ window.Pokedex.Models = {};
 window.Pokedex.Collections = {};
 
 Pokedex.Models.Pokemon = Backbone.Model.extend({
-  urlRoot: "/pokemon"
+  urlRoot: "/pokemon",
+  toys: function() {
+    if (!this._toys) {
+      this._toys = new Pokedex.Collections.PokemonToys();
+    }
+    return this._toys;
+  },
+
+  parse: function(payload) {
+    if (payload.toys) {
+      this.toys().set(payload.toys);
+      delete payload.toys;
+    }
+
+    return payload;
+    // return data
+  }
 }); // WRITE ME
 
-Pokedex.Models.Toy = null; // WRITE ME IN PHASE 2
+Pokedex.Models.Toy = Backbone.Model.extend();
 
 Pokedex.Collections.Pokemon = Backbone.Collection.extend({
   url: "/pokemon",
   model: Pokedex.Models.Pokemon
 }); // WRITE ME
 
-Pokedex.Collections.PokemonToys = null; // WRITE ME IN PHASE 2
+Pokedex.Collections.PokemonToys = Backbone.Collection.extend({
+  model: Pokedex.Models.Toy
+});
 
 window.Pokedex.Test = {
-  testShow: function (id) {
-    var pokemon = new Pokedex.Models.Pokemon({ id: id });
+  testShow: function(id) {
+    var pokemon = new Pokedex.Models.Pokemon({
+      id: id
+    });
     pokemon.fetch({
-      success: function () {
+      success: function() {
         console.log(pokemon.toJSON());
       }
     });
   },
 
-  testIndex: function () {
+  testIndex: function() {
     var pokemon = new Pokedex.Collections.Pokemon();
     pokemon.fetch({
-      success: function () {
+      success: function() {
         console.log(pokemon.toJSON());
       }
     });
   }
 };
 
-window.Pokedex.RootView = function ($el) {
+window.Pokedex.RootView = function($el) {
   this.$el = $el;
   this.pokes = new Pokedex.Collections.Pokemon();
   this.$pokeList = this.$el.find('.pokemon-list');
@@ -45,12 +65,12 @@ window.Pokedex.RootView = function ($el) {
 
   // Click handlers go here.
   $('ul.pokemon-list').on('click', 'li.poke-list-item',
-                          this.selectPokemonFromList.bind(this));
+    this.selectPokemonFromList.bind(this));
   $('form.new-pokemon').on('submit', this.submitPokemonForm.bind(this));
 };
 
 $(function() {
   var $rootEl = $('#pokedex');
-	window.Pokedex.rootView = new Pokedex.RootView($rootEl);
+  window.Pokedex.rootView = new Pokedex.RootView($rootEl);
   window.Pokedex.rootView.refreshPokemon();
 });
