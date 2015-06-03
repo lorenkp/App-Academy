@@ -2395,3 +2395,835 @@ Started GET "/posts" for ::1 at 2015-06-03 14:48:59 -0700
 Processing by PostsController#index as JSON
   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
 Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 14:53:53 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/posts/index.self-9374d20d19260f3fc42f51ffe971bd2cc39fe8db21b47025bf7ddbb9a4a5fd0a.js?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/views/posts_index.self-b195d9659ecb97b1acf37914cf2356947f2088cf621d9d218c27fdb9a6b246e2.js?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 14:53:53 -0700
+
+
+Started GET "/posts" for ::1 at 2015-06-03 14:54:02 -0700
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 15:08:01 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 277ms (Views: 277.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/posts/index.self-9374d20d19260f3fc42f51ffe971bd2cc39fe8db21b47025bf7ddbb9a4a5fd0a.js?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/posts/item.self-2400b7228184497d02a90f3d4288822f73b5cfe5052908b26f4ee7f7c64cf48e.js?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 15:08:01 -0700
+
+
+Started GET "/assets/views/posts_index.self-b195d9659ecb97b1acf37914cf2356947f2088cf621d9d218c27fdb9a6b246e2.js?body=1" for ::1 at 2015-06-03 15:08:02 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-1990b47aa7a1633a0d016b7523e44419466e1944129a24db9bec864e4f946c9e.js?body=1" for ::1 at 2015-06-03 15:08:02 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 15:08:02 -0700
+
+
+Started GET "/" for ::1 at 2015-06-03 15:23:31 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 162ms (Views: 161.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:23:31 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 15:23:31 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:23:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 15:23:31 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 15:23:31 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 15:23:31 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 15:23:32 -0700
+
+
+Started GET "/assets/posts/index.self-8fb9d99f63e88c28912f5aa002459f079e7e16797a6a50a1dd53b39567ce85a0.js?body=1" for ::1 at 2015-06-03 15:23:32 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 15:23:32 -0700
+
+
+Started GET "/assets/posts/item.self-2400b7228184497d02a90f3d4288822f73b5cfe5052908b26f4ee7f7c64cf48e.js?body=1" for ::1 at 2015-06-03 15:23:32 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 15:23:32 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 15:23:32 -0700
+
+
+Started GET "/assets/views/posts_index.self-5efa3476f72142d2a3bc288aedc1325ef948f03b10c886a82f7586696079f7a4.js?body=1" for ::1 at 2015-06-03 15:23:32 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-1990b47aa7a1633a0d016b7523e44419466e1944129a24db9bec864e4f946c9e.js?body=1" for ::1 at 2015-06-03 15:23:32 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 15:23:32 -0700
+
+
+Started GET "/posts" for ::1 at 2015-06-03 15:24:12 -0700
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 15:26:19 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 168ms (Views: 167.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/posts/index.self-8fb9d99f63e88c28912f5aa002459f079e7e16797a6a50a1dd53b39567ce85a0.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/posts/item.self-2400b7228184497d02a90f3d4288822f73b5cfe5052908b26f4ee7f7c64cf48e.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/views/posts_index.self-fbdd27635add42ae21205f43f93b449bce3976309731d1b0c83e975af19b0970.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-1990b47aa7a1633a0d016b7523e44419466e1944129a24db9bec864e4f946c9e.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 15:26:19 -0700
+
+
+Started GET "/posts" for ::1 at 2015-06-03 15:26:45 -0700
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 15:29:52 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 168ms (Views: 167.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/posts/index.self-8fb9d99f63e88c28912f5aa002459f079e7e16797a6a50a1dd53b39567ce85a0.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/posts/item.self-2400b7228184497d02a90f3d4288822f73b5cfe5052908b26f4ee7f7c64cf48e.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-1990b47aa7a1633a0d016b7523e44419466e1944129a24db9bec864e4f946c9e.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/assets/views/posts_index.self-e4f2c1a24df6f1d2d2c959539b8c20660c7dfd18838cc489252940ae124cb849.js?body=1" for ::1 at 2015-06-03 15:29:52 -0700
+
+
+Started GET "/posts" for ::1 at 2015-06-03 15:30:00 -0700
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 15:30:39 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 157ms (Views: 157.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/posts/item.self-2400b7228184497d02a90f3d4288822f73b5cfe5052908b26f4ee7f7c64cf48e.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/posts/index.self-8fb9d99f63e88c28912f5aa002459f079e7e16797a6a50a1dd53b39567ce85a0.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/views/posts_index.self-c00deec78aea965ba4e800fcf3470215e10a7a2bdc4a111a2e729f9d1912163e.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-1990b47aa7a1633a0d016b7523e44419466e1944129a24db9bec864e4f946c9e.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 15:30:39 -0700
+
+
+Started GET "/posts" for ::1 at 2015-06-03 15:30:45 -0700
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 15:31:39 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 184ms (Views: 184.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/posts/index.self-8fb9d99f63e88c28912f5aa002459f079e7e16797a6a50a1dd53b39567ce85a0.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/posts/item.self-2400b7228184497d02a90f3d4288822f73b5cfe5052908b26f4ee7f7c64cf48e.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/views/posts_index.self-ad50d59e3c0cc8fde5e8b27d74a7ab861b44d43b5db26c9349b1c70c71382a2b.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-1990b47aa7a1633a0d016b7523e44419466e1944129a24db9bec864e4f946c9e.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 15:31:40 -0700
+
+
+Started GET "/posts" for ::1 at 2015-06-03 15:31:47 -0700
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 15:32:04 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 174ms (Views: 174.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:32:04 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:32:04 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 15:32:04 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/assets/posts/index.self-8fb9d99f63e88c28912f5aa002459f079e7e16797a6a50a1dd53b39567ce85a0.js?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/assets/posts/item.self-2400b7228184497d02a90f3d4288822f73b5cfe5052908b26f4ee7f7c64cf48e.js?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/assets/views/posts_index.self-d94ee57746c10a0daf0a5ca38e2c69935a42135b4e9241e7a00aa799ca412d4c.js?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-1990b47aa7a1633a0d016b7523e44419466e1944129a24db9bec864e4f946c9e.js?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 15:32:05 -0700
+
+
+Started GET "/posts" for ::1 at 2015-06-03 15:32:10 -0700
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 15:33:15 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/posts/index.self-8fb9d99f63e88c28912f5aa002459f079e7e16797a6a50a1dd53b39567ce85a0.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/posts/item.self-2400b7228184497d02a90f3d4288822f73b5cfe5052908b26f4ee7f7c64cf48e.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/views/posts_index.self-d94ee57746c10a0daf0a5ca38e2c69935a42135b4e9241e7a00aa799ca412d4c.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-1990b47aa7a1633a0d016b7523e44419466e1944129a24db9bec864e4f946c9e.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 15:33:15 -0700
+
+
+Started GET "/posts" for ::1 at 2015-06-03 15:33:23 -0700
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 15:35:01 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 272ms (Views: 272.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/posts/index.self-22e53c5f21e4ab4d563cea87f864e6cf60ddd23497f3fcb3008a2e8c4bfa7090.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/posts/item.self-2400b7228184497d02a90f3d4288822f73b5cfe5052908b26f4ee7f7c64cf48e.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/views/posts_index.self-d94ee57746c10a0daf0a5ca38e2c69935a42135b4e9241e7a00aa799ca412d4c.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-1990b47aa7a1633a0d016b7523e44419466e1944129a24db9bec864e4f946c9e.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 15:35:01 -0700
+
+
+Started GET "/posts" for ::1 at 2015-06-03 15:35:09 -0700
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 15:43:55 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 299ms (Views: 298.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/posts/index.self-61ae0ed1a12f643d83dbc87c089f169006800615dc41c41b2a30631c95f30963.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/posts/item.self-2400b7228184497d02a90f3d4288822f73b5cfe5052908b26f4ee7f7c64cf48e.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/views/posts_index.self-faf63dcd5fdb7b5f92a86aad3aa81fbf7f15b01e6e2fce8f317ae935f72d7dd6.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-4b088b588eabef56459cd57e08564d89e6f029d006800832b2e8b4c37241182e.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/posts/index.self-61ae0ed1a12f643d83dbc87c089f169006800615dc41c41b2a30631c95f30963.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/posts/item.self-2400b7228184497d02a90f3d4288822f73b5cfe5052908b26f4ee7f7c64cf48e.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/views/posts_index.self-faf63dcd5fdb7b5f92a86aad3aa81fbf7f15b01e6e2fce8f317ae935f72d7dd6.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-4b088b588eabef56459cd57e08564d89e6f029d006800832b2e8b4c37241182e.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 15:43:56 -0700
+
+
+Started GET "/posts" for ::1 at 2015-06-03 15:44:05 -0700
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 16:30:09 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 286ms (Views: 285.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/posts/index.self-61ae0ed1a12f643d83dbc87c089f169006800615dc41c41b2a30631c95f30963.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/posts/item.self-5229798f8b71ad9f6c748b7c84dc33e09d2ff29781b0abd3a9a1bead2f94840f.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/views/posts_index.self-a91ca026bc977f4cc0f460effcb97b36e3e90be73b5de174778fc5fbba930ab9.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-282428e43d4e08bf2bbd69c545fbaac12bfe31049b1c906f6c5d340d91107788.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 16:30:10 -0700
+
+
+Started GET "/" for ::1 at 2015-06-03 16:30:39 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 175ms (Views: 175.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/posts/index.self-61ae0ed1a12f643d83dbc87c089f169006800615dc41c41b2a30631c95f30963.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/posts/item.self-5229798f8b71ad9f6c748b7c84dc33e09d2ff29781b0abd3a9a1bead2f94840f.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/views/posts_index.self-a91ca026bc977f4cc0f460effcb97b36e3e90be73b5de174778fc5fbba930ab9.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-d5ea63e366c683cd2eeaadb077d9fab15a9d0edddad02a0557d44a157b6d52e1.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 16:30:39 -0700
+
+
+Started GET "/" for ::1 at 2015-06-03 16:31:03 -0700
+Processing by RootControllerController#root as HTML
+  Rendered root_controller/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 179ms (Views: 178.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/root_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/journal_app.self-992e0fc7b75142610fee608bf19368b3c91cac3a6c68b3324384ddf5fcb29608.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/posts/item.self-5229798f8b71ad9f6c748b7c84dc33e09d2ff29781b0abd3a9a1bead2f94840f.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/posts/index.self-61ae0ed1a12f643d83dbc87c089f169006800615dc41c41b2a30631c95f30963.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/models/post.self-c9d25b0a39a0e13c0b4e49bdd58484ad848de4c26f4ab5858c4970ba950c9f01.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/collections/posts.self-0e96d93092143b799d6e6ba63dfd05b387446fafbeeae92b56795f5c6d2dab0e.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/views/posts_index.self-a91ca026bc977f4cc0f460effcb97b36e3e90be73b5de174778fc5fbba930ab9.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/views/posts_index_item.self-232b1ecb7dc825683227e5d7c28cfc31e51e7156574b61a1ee0ba73d11ec6031.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-06-03 16:31:03 -0700
+
+
+Started GET "/posts" for ::1 at 2015-06-03 16:31:18 -0700
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (14.4ms)[0m  SELECT "posts".* FROM "posts"
+Completed 200 OK in 35ms (Views: 5.9ms | ActiveRecord: 15.2ms)
+
+
+Started DELETE "/posts/1" for ::1 at 2015-06-03 16:33:15 -0700
+Processing by PostsController#destroy as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (14.6ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 200 OK in 439ms (Views: 0.6ms | ActiveRecord: 16.0ms)
+
+
+Started DELETE "/posts/2" for ::1 at 2015-06-03 16:34:03 -0700
+Processing by PostsController#destroy as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/posts/3" for ::1 at 2015-06-03 16:34:17 -0700
+Processing by PostsController#destroy as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.9ms)
+  [1m[36mPost Load (2.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
