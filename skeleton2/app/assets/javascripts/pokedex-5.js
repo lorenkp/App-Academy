@@ -25,6 +25,7 @@ Pokedex.Views.PokemonIndex = Backbone.View.extend({
 
   selectPokemonFromList: function (event) {
     console.log($(event.currentTarget).text());
+    var detailView = new Pokedex.Views.PokemonDetail(event)
   }
 });
 
