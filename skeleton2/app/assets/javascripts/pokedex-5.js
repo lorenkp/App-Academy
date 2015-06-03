@@ -2,21 +2,29 @@ Pokedex.Views = {}
 
 Pokedex.Views.PokemonIndex = Backbone.View.extend({
   events: {
+    "click ul.poke-list-item": "selectPokemonFromList"
   },
 
-  initialize: function () {
+  initialize: function (options) {
+    this.listenTo(this.collection, "sync add", this.render);
   },
 
   addPokemonToList: function (pokemon) {
+    this.$el.append(JST["pokemonListItem"]({pokemon: pokemon}));
   },
 
   refreshPokemon: function (options) {
   },
 
   render: function () {
+    this.$el.empty();
+    this.collection.each( function (pokemon) {
+      this.addPokemonToList(pokemon);
+    }.bind(this));
   },
 
   selectPokemonFromList: function (event) {
+    console.log($(event.currentTarget).text());
   }
 });
 
@@ -41,10 +49,11 @@ Pokedex.Views.ToyDetail = Backbone.View.extend({
   }
 });
 
-/*
+
 $(function () {
-  var pokemonIndex = new Pokedex.Views.PokemonIndex();
+  var pokesCollection = new Pokedex.Collections.Pokemon();
+  pokesCollection.fetch();
+  var pokemonIndex = new Pokedex.Views.PokemonIndex({collection: pokesCollection});
   pokemonIndex.refreshPokemon();
   $("#pokedex .pokemon-list").html(pokemonIndex.$el);
 });
-*/
