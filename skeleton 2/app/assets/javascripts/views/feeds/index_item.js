@@ -4,9 +4,7 @@ NewsReader.Views.FeedIndexItem = Backbone.View.extend({
   className: "feed-index-item",
 
   render: function() {
-    var renderedContent = this.template({
-      feed: this.model
-    });
+    var renderedContent = this.template({ feed: this.model });
     this.$el.html(renderedContent);
 
     return this;
