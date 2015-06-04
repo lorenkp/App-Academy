@@ -12,8 +12,8 @@ JournalApp.Collections.Posts = Backbone.Collection.extend({
       post.fetch({
         success: function () {
           collection.add(post);
-        }
-      });
+    }
+  });
 }
 
 return post;

@@ -4,7 +4,11 @@ window.JournalApp = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+    var posts = new JournalApp.Collections.Posts();
+    posts.fetch({reset: true});
+    this.$rootEl = $('.main');
+    this._router = new JournalApp.Routers.Posts({ collection: posts, $rootEl: this.$rootEl });
+    Backbone.history.start();
   }
 };
 
