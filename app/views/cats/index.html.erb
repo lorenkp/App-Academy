@@ -1,0 +1,19 @@
+<%= render 'shared/header' %>
+
+<div>
+  <h1 class="title">99Kittens</h1>
+
+  <h3>Rent a kitten for your lonely, lonely weekend</h3>
+  (We only have <%= @cats.size %> left, the other <%= 99 - @cats.size %> died of sadness while waiting for you.)
+
+  <% unless @cats.empty? %>
+    <ul>
+      <% @cats.each do |cat| %>
+        <li><%= link_to cat.name, cat_url(cat) %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <br/>
+  <%= link_to "Rent out your own kitten", new_cat_url %>
+</div>
