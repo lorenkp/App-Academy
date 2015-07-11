@@ -1,0 +1,17 @@
+<h1>Create Comment</h1>
+<br>
+
+<%= render "shared/errors"  %>
+
+<form action="/comments" method="post">
+  <input type="hidden"
+         name="authenticity_token"
+         value="<%= form_authenticity_token  %>">
+  <textarea name="comment[content]"
+          id="comment_content"
+          name="comment[content]"><%= @comment.content %></textarea>
+  <input type="hidden"
+         name="comment[post_id]"
+         value="<%= @comment.post_id  %>">
+  <input type="submit" value="Create Comment">
+</form>

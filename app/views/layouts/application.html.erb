@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RedditClone</title>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <% if logged_in? %>
+    <%= button_to "Log Out", session_url, method: :delete %>
+  <% end %>
+
+
+<%= yield %>
+
+</body>
+</html>
