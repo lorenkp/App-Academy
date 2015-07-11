@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="./jquery-2.1.4.js"></script>
+  <script src="./thumbnails.js"></script>
+  <link href="./thumbnails.css" rel="stylesheet" type="text/css">
+  <title>Kitty Carousel</title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+</head>
+
+<body>
+  <div class="thumbnails">
+    <div class="active"></div>
+    <div class="gutter group">
+      <a href="#" id="left" class="nav">&lt;</a>
+      <div class="gutter-images group">
+        <img src="https://octodex.github.com/images/original.png"></img>
+        <img src="https://octodex.github.com/images/forktocat.jpg"></img>
+        <img src="https://octodex.github.com/images/linktocat.jpg"></img>
+        <img src="https://octodex.github.com/images/codercat.jpg"></img>
+        <img src="https://octodex.github.com/images/repo.png"></img>
+        <img src="https://octodex.github.com/images/original.png"></img>
+        <img src="https://octodex.github.com/images/forktocat.jpg"></img>
+        <img src="https://octodex.github.com/images/linktocat.jpg"></img>
+        <img src="https://octodex.github.com/images/codercat.jpg"></img>
+        <img src="https://octodex.github.com/images/repo.png"></img>
+        <img src="https://octodex.github.com/images/original.png"></img>
+        <img src="https://octodex.github.com/images/forktocat.jpg"></img>
+        <img src="https://octodex.github.com/images/linktocat.jpg"></img>
+        <img src="https://octodex.github.com/images/codercat.jpg"></img>
+        <img src="https://octodex.github.com/images/repo.png"></img>
+      </div>
+      <a href="#" id="right" class="nav right">&gt;</a>
+
+    </div>
+
+  </div>
+
+  <script>
+    $(function() {
+      $('.thumbnails').thumbnails();
+    })
+  </script>
+
+</body>
+
+</html>
