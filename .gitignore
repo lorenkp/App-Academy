@@ -8,13 +8,21 @@
 /.bundle
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> W6D5-master
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
+<<<<<<< HEAD
 >>>>>>> Music-App-master
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
+=======
+# Ignore all logfiles and tempfiles.
+/log/*.log
+>>>>>>> W6D5-master
 /tmp
